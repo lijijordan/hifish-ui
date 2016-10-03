@@ -19,7 +19,7 @@
     <link href="assets/css/styles.css" rel="stylesheet">
 
     <!-- Google Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300,500' rel='stylesheet' type='text/css'>
+    <!--<link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300,500' rel='stylesheet' type='text/css'>-->
 
   </head>
 
@@ -265,7 +265,7 @@
           <div class="col-xs-12">
             
             <h3 class="page-header">
-              Forms <small>General elements</small>
+              设置 <small>基本信息</small>
             </h3>
 
           </div>
@@ -276,23 +276,14 @@
             <!-- Basic form -->
             <div class="panel panel-default">
               <div class="panel-heading">
-              <h4 class="panel-title">Basic form</h4>
+              <h4 class="panel-title">报警</h4>
               </div>
               <div class="panel-body">
                 <form>
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                  </div>
                   <div class="checkbox">
                       <input type="checkbox" id="checkbox_1" checked> 
-                      <label for="checkbox_1">Remember me</label>
+                      <label for="checkbox_1">开启报警</label>
                   </div>
-                  <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
               </div>
             </div>
@@ -300,19 +291,17 @@
             <!-- Inline form -->
             <div class="panel panel-default">
               <div class="panel-heading">
-              <h4 class="panel-title">Inline form</h4>
+              <h4 class="panel-title">设置温度</h4>
               </div>
               <div class="panel-body">
                 <form class="form-inline">
                   <div class="form-group">
-                    <label class="sr-only" for="exampleInputEmail3">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
+                    <input type="text" class="form-control" id="min_temperature" placeholder="报警阈值(最小)">
                   </div>
                   <div class="form-group">
-                    <label class="sr-only" for="exampleInputPassword3">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
+                    <input type="text" class="form-control" id="max_temperature" placeholder="报警阈值(最大)">
                   </div>
-                  <button type="submit" class="btn btn-primary">Submit</button>
+                  <button type="submit" class="btn btn-primary">确定</button>
                 </form>
               </div>
             </div>
@@ -320,144 +309,43 @@
             <!-- Control sizing -->
             <div class="panel panel-default">
               <div class="panel-heading">
-              <h4 class="panel-title">Control sizing</h4>
+              <h4 class="panel-title">设置PH</h4>
               </div>
               <div class="panel-body">
-                <form>
-                  <div class="controls">
-                    <div class="form-group">
-                      <input class="form-control input-lg" type="text" placeholder=".input-lg">
-                    </div>
-                    <div class="form-group">
-                      <input type="text" class="form-control" placeholder="Default input">
-                    </div>
-                    <div class="form-group">
-                      <input class="form-control input-sm" type="text" placeholder=".input-sm">
-                    </div>
-                    <div class="form-group">
-                      <select class="form-control input-lg">
-                        <option value="">.input-lg</option>                 
-                      </select>
-                    </div>
-                    <div class="form-group">
-                      <select class="form-control">
-                        <option value="">Default select</option>            
-                      </select>
-                    </div>
-                    <div class="form-group">
-                      <select class="form-control input-sm">
-                        <option value="">.input-sm</option>                  
-                      </select>
-                    </div>
+                <form class="form-inline">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="min_ph" placeholder="报警阈值(最小)">
                   </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="max_ph" placeholder="报警阈值(最大)">
+                  </div>
+                  <button type="submit" class="btn btn-primary">确定</button>
                 </form>
               </div>
             </div>
 
           </div>
           <div class="col-xs-12 col-sm-6">
-            
+
             <!-- Horizontal form -->
             <div class="panel panel-default">
               <div class="panel-heading">
-              <h4 class="panel-title">Horizontal form</h4>
+              <h4 class="panel-title">设置盐度</h4>
               </div>
               <div class="panel-body">
-                <form class="form-horizontal">
+                <form class="form-inline">
                   <div class="form-group">
-                    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-                    <div class="col-sm-10">
-                      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-                    </div>
+                    <input type="text" class="form-control" id="min_sla" placeholder="报警阈值(最小)">
                   </div>
                   <div class="form-group">
-                    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
-                    <div class="col-sm-10">
-                      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-                    </div>
+                    <input type="text" class="form-control" id="max_sal" placeholder="报警阈值(最大)">
                   </div>
-                  <div class="form-group">
-                    <div class="col-sm-offset-2 col-sm-10">
-                      <div class="checkbox">
-                        <input type="checkbox" id="checkbox_2">
-                        <label for="checkbox_2">Remember me</label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <div class="col-sm-offset-2 col-sm-10">
-                      <button type="submit" class="btn btn-primary">Submit</button>
-                    </div>
-                  </div>
+                  <button type="submit" class="btn btn-primary">确定</button>
                 </form>
               </div>
             </div>
 
             <!-- Supported controls -->
-            <div class="panel panel-default">
-              <div class="panel-heading">
-              <h4 class="panel-title">Supported controls</h4>
-              </div>
-              <div class="panel-body">
-                <form>
-                  <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Text input">
-                  </div>
-                  <div class="form-group">
-                    <textarea class="form-control" rows="3"></textarea>
-                  </div>
-                  <div class="checkbox">
-                    <input type="checkbox" id="checkbox_3">
-                    <label for="checkbox_3">
-                      Option one is this and that&mdash;be sure to include why it's great
-                    </label>
-                  </div>
-                  <div class="checkbox disabled">
-                    <input type="checkbox" id="checkbox_4" disabled>
-                    <label for="checkbox_4">
-                      Option two is disabled
-                    </label>
-                  </div>
-
-                  <div class="radio">
-                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                    <label for="optionsRadios1">
-                      Option one is this and that&mdash;be sure to include why it's great
-                    </label>
-                  </div>
-                  <div class="radio">
-                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                    <label for="optionsRadios2">
-                      Option two can be something else and selecting it will deselect option one
-                    </label>
-                  </div>
-                  <div class="radio disabled">
-                    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
-                    <label for="optionsRadios3">
-                      Option three is disabled
-                    </label>
-                  </div>
-                  <div class="form-group">
-                    <select class="form-control">
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <select multiple class="form-control">
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                    </select>
-                  </div>
-                </form>
-              </div>
-            </div>
 
           </div>
         </div> <!-- / .row -->
@@ -484,7 +372,7 @@
     ================================================== -->
     
     <!-- JS Global -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="assets/plugins/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     
     <!-- JS Plugins -->

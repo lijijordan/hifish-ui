@@ -12111,7 +12111,7 @@
 		 *        ] } );
 		 *    } );
 		 */
-		"bSearchable": true,
+		"bSearchable": false,
 	
 	
 		/**
