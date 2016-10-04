@@ -27,10 +27,10 @@ $(document).ready(function () {
     }).done(function (data) {
         console.log(data);
         // 当前值
-        $('.count-to').countTo({from: 0, to: data.curValue});
-        renderLine(data.averageValueByDay, ".chart_day", "hh:mm:ss");
-        renderLine(data.averageValueByWeek, ".chart_week", "d");
-        renderLine(data.averageValueByMonth, ".chart_month", "d");
+        $('.count-to').countTo({from: 0, to: data.content.curValue});
+        renderLine(data.content.averageValueByDay, ".chart_day", "hh:mm:ss");
+        renderLine(data.content.averageValueByWeek, ".chart_week", "d");
+        renderLine(data.content.averageValueByMonth, ".chart_month", "d");
 
     });
 
