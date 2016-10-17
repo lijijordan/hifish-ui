@@ -19,6 +19,11 @@ var brandTealColor = "rgba(77, 182, 172, 1)";
 var type = getUrlParam('type');
 
 $(document).ready(function () {
+    
+    $('#type').html(type);
+    $('#type_day').html(type);
+    $('#type_week').html(type);
+    $('#type_month').html(type);
     $.ajax({
         url: "/fishapi/sensor/getSensorDetailPageVal/fisher01/fisher01/" + type,
         xhrFields: {

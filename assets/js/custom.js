@@ -17,6 +17,31 @@
 
 // Sidebar
 
+
+
+$(document).ready(function () {
+    // 特效
+    $('.count-to-ph').countTo({from: 0, to: 7.89});
+    $('.count-to-temperature').countTo({from: 0, to: 23.42});
+    $('.count-to-salinity').countTo({from: 0, to: 50.12});
+    $('.count-to-light').countTo({from: 0, to: 142});
+    
+    $.ajax({
+        url: "/fishapi/sensor/getHomePageVal/fisher01/fisher01",
+        xhrFields: {
+            withCredentials: true
+        }
+    }).done(function (data) {
+        console.log(data);
+        // 当前值
+        $('.count-to-ph').countTo({from: 0, to: data.content.phCurValue});
+        $('.count-to-temperature').countTo({from: 0, to: data.content.tempCurValue});
+        $('.count-to-salinity').countTo({from: 0, to: data.content.salinityCurValue});
+        $('.count-to-light').countTo({from: 0, to: data.content.lightCurValue});
+    });
+
+});
+
 $(function () {
 
     // Init perfect scrollbar
